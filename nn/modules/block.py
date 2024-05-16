@@ -1261,7 +1261,7 @@ class BiFPN_Add3(nn.Module):
         # Fast normalized fusion
         return self.conv(self.silu(weight[0] * x[0] + weight[1] * x[1] + weight[2] * x[2]))
 
-#----------swintf-----------------------------------------
+#----------swintf----C3STR---------------------------------
 class SwinTransformerBlock(nn.Module):
     def __init__(self, c1, c2, num_heads, num_layers, window_size=8):
         super().__init__()
